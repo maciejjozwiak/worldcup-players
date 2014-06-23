@@ -1,5 +1,68 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    h1 Brazil World Cup 2014 Players Database
+    p Find information about any player participating in the World Cup.
+    h1= title
+
+    #logo
+        <img src="/images/brasil2014.png" width="300" height="375" alt="world cup 2014 logo" />
+
+    // Wrapper
+    #wrapper
+
+        // PLAYER INFO
+        #playerInfo
+            h2 Player Info
+            div
+                <span id='playerImage'></span>
+                br
+                strong <span id='playerInfoName'></span>
+                p 
+                strong Website:
+                |  <span id='playerInfoWebsite'></span>
+                p
+                strong Age:
+                |  <span id='playerInfoAge'></span>
+                p
+                strong Nationality:
+                |  <span id='playerInfoNationality'></span>
+                p
+                strong Height:
+                |  <span id='playerInfoHeight'></span>
+                p
+                strong Weight:
+                |  <span id='playerInfoWeight'></span>
+                p
+                strong Position:
+                |  <span id='playerInfoPos'></span>
+                p
+                strong Number:
+                |  <span id='playerInfoNumber'></span>
+                p
+                strong Caps (goals):
+                |  <span id='playerInfoCaps'></span>
+                p
+                strong Club:
+                |  <span id='playerInfoClub'></span>
+                p
+                strong Info:
+                |  <span id='playerInfoDescription'></span>
+        // /PLAYER INFO
+
+        // PLAYERS LIST
+        h2#list Players List
+
+        #playerList
+            <input placeholder="Search players" id="box" type="text" /> 
+            table
+                thead
+                    th Player Name
+                    th Nationality
+                    th Birthday
+                    th Caps
+                    th Goals
+                tbody
+        // /PLAYERS LIST
+
+    // /WRAPPER
